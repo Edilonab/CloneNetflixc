@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 const API_KEY = 'acbc60195a4edb0be7f7ef35843c4725';
 const API_BASE = 'https://api.themoviedb.org/3';
 
@@ -17,8 +18,7 @@ const basicFetch = async (endpoint) => {
     const json = await req.json();
     return json;
 }
-
-// eslint-disable-next-line import/no-anonymous-default-export
+ 
 export default {
     getHomeList: async () => {
         return [

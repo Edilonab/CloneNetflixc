@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/no-anonymous-default-export */
 import React, { useEffect, useState } from 'react';
 import Tmdb from './Tmdb';
 import MovieRow from './components/MovieRow';
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
 
     const [movieList, setMovieList] = useState([]);
@@ -22,7 +23,7 @@ export default () => {
         <div className="page">
             <section className="lists">
                 {movieList.map((item, key)=>(
-                    <MovieRow Key={key} title={item.title} items={item.items} />
+                    <MovieRow Key={key} title={item.title} items={item.items} /> 
                 ))}
             </section>
         </div>
