@@ -13,7 +13,7 @@ export default () => {
         const loadAll = async() => {
             //pegando a lista ToTAL
             let list = await Tmdb.getHomeList();
-            console.log(list);
+            setMovieList(list);
         }
 
         loadAll();
