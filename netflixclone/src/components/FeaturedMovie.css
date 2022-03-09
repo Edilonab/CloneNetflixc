@@ -1,0 +1,10 @@
+import React form 'react';
+import './FeatureMovie.css';
+
+export default () =>{
+    return (
+        <div>
+        FILME EM DESTAQue
+        </div>
+    );
+}
