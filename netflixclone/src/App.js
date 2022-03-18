@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/no-anonymous-default-export */
 import React, { useEffect, useState } from 'react';
@@ -14,19 +13,20 @@ export default () => {
 
     useEffect(()=>{
         const loadAll = async() => {
-            //pegando a lista ToTAL
-            let list = await Tmdb.getHomeList();
-            setMovieList(list);
+          //pegando a lista ToTAL
+          let list = await Tmdb.getHomeList();
+          setMovieList(list);
 
-            //pegando o Featured
-            let originals = list.filter(i=>i.slug === 'originals');
-            let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length - 1)); 
-            let chosen = originals[0].items.results[randomChosen];
-            let chosenInfo = await Tmdb.getMovieinfor(chosen.id, 'tv');
-            setFeaturedData(chosenInfo);
+          //pegando o Featured
+          let originals = list.filter(i=>i.slug === 'originals');
+          let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length - 1)); 
+          let chosen = originals[0].items.results[randomChosen];
+          let chosenInfo = await Tmdb.getMovieInfor(chosen.id, 'tv');
+          setFeaturedData(chosenInfo);
+          //console.log(chosenInfo);
         }
 
-        loadAll();
+       loadAll();
     }, []);
 
     return (
