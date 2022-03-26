@@ -44,7 +44,7 @@ export default () => {
         window.removeEventListener('scroll', scrollListener);
       }
     }, []);
-    
+
     return (
         <div className="page">
 
@@ -59,6 +59,14 @@ export default () => {
                     <MovieRow Key={key} title={item.title} items={item.items} /> 
                 ))}
             </section>
+
+            <div>
+                <footer>
+                    Feito com <span role="img" aria-label="coração">💗</span> por EDILON ABRANCHES<br/>
+                    Direitos de imagem para Netflix<br/>
+                    Dados retirado do site Themoviedb.org
+                </footer>
+            </div>
         </div>
     );
 }
