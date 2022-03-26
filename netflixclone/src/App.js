@@ -60,13 +60,11 @@ export default () => {
                 ))}
             </section>
 
-            <div>
-                <footer>
-                    Feito com <span role="img" aria-label="coração">💗</span> por EDILON ABRANCHES<br/>
-                    Direitos de imagem para Netflix<br/>
-                    Dados retirado do site Themoviedb.org
-                </footer>
-            </div>
+            <footer>
+                Feito com <span role="img" aria-label="coração">💗</span> por EDILON ABRANCHES<br/>
+                Direitos de imagem para Netflix<br/>
+                Dados retirado do site Themoviedb.org
+            </footer>
         </div>
     );
 }
