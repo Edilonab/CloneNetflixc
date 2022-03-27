@@ -65,6 +65,10 @@ export default () => {
                 Direitos de imagem para Netflix<br/>
                 Dados retirado do site Themoviedb.org
             </footer>
+
+            <div className='loading'>
+                <img src "" alt="Carregando"
+            </div>
         </div>
     );
 }
