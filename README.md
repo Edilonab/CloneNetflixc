@@ -1,2 +1,0 @@
-# CloneNetflixc
-Feito com React
